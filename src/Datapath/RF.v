@@ -1,6 +1,6 @@
 module RF(
   input clk,
-  input reg RFWr, // Write data signal
+  input reg RegWrite, // Write data signal
 
 	input [4:0]WA1, // Address of 1st. reg to write
   		
@@ -21,7 +21,7 @@ module RF(
 
   always@(posedge clk)
   begin
-    if (WA1 != 0 && RFWr) begin
+    if (WA1 != 0 && RegWrite) begin
       register[WA1] = WD;
     end
   end

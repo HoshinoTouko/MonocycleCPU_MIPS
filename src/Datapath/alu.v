@@ -17,9 +17,9 @@
   begin
     // Calc 
     case (ALUOp)
-      `ALUOP_ADD: result = num_1 + num_2;
-      `ALUOP_SUB: result = num_1 - num_2;
-      `ALUOP_OR: result = num_1 | num_2;
+      `ALUOP_ADDU: result = num_1 + num_2;
+      `ALUOP_SUBU: result = num_1 - num_2;
+      `ALUOP_ORI: result = num_1 | num_2;
       default: result = 0;
     endcase 
     // Zero
