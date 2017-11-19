@@ -1,6 +1,9 @@
 # PyCharm
 .idea/
 
+# Verilog
+*.bak
+
 # Multisim
 work/
 
