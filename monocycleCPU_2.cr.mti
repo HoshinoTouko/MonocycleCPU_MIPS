@@ -1,1 +1,82 @@
+C:/Projects/modeltech/monocycleCPU_2/test/Datapath/RF_tb.v {1 {vlog -work work -vopt C:/Projects/modeltech/monocycleCPU_2/test/Datapath/RF_tb.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module RF_tb
 
+Top level modules:
+	RF_tb
+
+} {} {}} C:/Projects/modeltech/monocycleCPU_2/test/Datapath/alu_tb.v {1 {vlog -work work -vopt C:/Projects/modeltech/monocycleCPU_2/test/Datapath/alu_tb.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module alu_tb
+
+Top level modules:
+	alu_tb
+
+} {} {}} C:/Projects/modeltech/monocycleCPU_2/src/Datapath/RF.v {1 {vlog -work work -vopt C:/Projects/modeltech/monocycleCPU_2/src/Datapath/RF.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module RF
+
+Top level modules:
+	RF
+
+} {} {}} C:/Projects/modeltech/monocycleCPU_2/src/Datapath/EXT.v {1 {vlog -work work -vopt C:/Projects/modeltech/monocycleCPU_2/src/Datapath/EXT.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module EXT
+
+Top level modules:
+	EXT
+
+} {} {}} C:/Projects/modeltech/monocycleCPU_2/src/Datapath/NPC.v {1 {vlog -work work -vopt C:/Projects/modeltech/monocycleCPU_2/src/Datapath/NPC.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+
+} {} {}} C:/Projects/modeltech/monocycleCPU_2/src/Datapath/alu.v {1 {vlog -work work -vopt C:/Projects/modeltech/monocycleCPU_2/src/Datapath/alu.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} C:/Projects/modeltech/monocycleCPU_2/src/Define/global_def.v {1 {vlog -work work -vopt C:/Projects/modeltech/monocycleCPU_2/src/Define/global_def.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+
+} {} {}} C:/Projects/modeltech/monocycleCPU_2/src/Define/ctrl_encode_def.v {1 {vlog -work work -vopt C:/Projects/modeltech/monocycleCPU_2/src/Define/ctrl_encode_def.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+
+} {} {}} C:/Projects/modeltech/monocycleCPU_2/src/Define/instruction_def.v {1 {vlog -work work -vopt C:/Projects/modeltech/monocycleCPU_2/src/Define/instruction_def.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+
+} {} {}} C:/Projects/modeltech/monocycleCPU_2/src/Generatic/mux.v {1 {vlog -work work -vopt C:/Projects/modeltech/monocycleCPU_2/src/Generatic/mux.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module mux
+
+Top level modules:
+	mux
+
+} {} {}} C:/Projects/modeltech/monocycleCPU_2/src/Generatic/flopr.v {1 {vlog -work work -vopt C:/Projects/modeltech/monocycleCPU_2/src/Generatic/flopr.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+
+} {} {}} C:/Projects/modeltech/monocycleCPU_2/src/Datapath/im.v {1 {vlog -work work -vopt C:/Projects/modeltech/monocycleCPU_2/src/Datapath/im.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module im
+
+Top level modules:
+	im
+
+} {} {}} C:/Projects/modeltech/monocycleCPU_2/src/Datapath/dm.v {1 {vlog -work work -vopt C:/Projects/modeltech/monocycleCPU_2/src/Datapath/dm.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module dm
+
+Top level modules:
+	dm
+
+} {} {}} C:/Projects/modeltech/monocycleCPU_2/test/Generatic/mux_tb.v {1 {vlog -work work -vopt C:/Projects/modeltech/monocycleCPU_2/test/Generatic/mux_tb.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module mux_tb
+
+Top level modules:
+	mux_tb
+
+} {} {}} C:/Projects/modeltech/monocycleCPU_2/src/Datapath/IR.v {1 {vlog -work work -vopt C:/Projects/modeltech/monocycleCPU_2/src/Datapath/IR.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+
+} {} {}}
