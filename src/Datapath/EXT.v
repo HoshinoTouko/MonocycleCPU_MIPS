@@ -16,7 +16,7 @@ module EXT(
       `EXTOP_ZERO: Immediate32 <= {{16'b0}, Immediate16[15:0]};
       `EXTOP_SIGNED: Immediate32 <= {{16{Immediate16[15]}}, Immediate16[15:0]};
       `EXTOP_INST: Immediate32 <= 32'b0;
-      default: Immediate32 <= 32'b0;
+      default: Immediate32 <= {{16'b0}, Immediate16[15:0]};
     endcase
   end
 endmodule
