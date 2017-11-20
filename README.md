@@ -1,3 +1,3 @@
 # MonocycleCPU_MIPS
 
-Instruction signals at [Here](https://github.com/HoshinoTouko/MonocycleCPU_MIPS/blob/master/doc/commands.md)
+Instruction signals at [Here](https://github.com/HoshinoTouko/MonocycleCPU_MIPS/blob/master/doc/instructions.md)
