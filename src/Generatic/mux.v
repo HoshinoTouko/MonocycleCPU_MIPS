@@ -5,22 +5,16 @@
  */
 
 module mux(
-  input reg[31:0] d0,
-  input reg[31:0] d1,
-  input reg[31:0] d2,
-  input reg[31:0] d3,
-  input reg[3:0] signal,
-  output reg[31:0] output_data
+  input wire[31:0] d0,
+  input wire[31:0] d1,
+  input wire signal,
+  output wire[31:0] output_data
 );
 
+  assign output_data = signal ? d1 : d0;
   always@(*)
   begin
-    case(signal)
-      2'b00: output_data = d0;
-      2'b01: output_data = d1;
-      2'b10: output_data = d2;
-      2'b11: output_data = d3;
-      default: output_data = 32'b0;
-    endcase
+    // $display("d0: 0x%x, d1: 0x%x", d0, d1);
+    // $display("Select 0x%x", output_data);
   end
 endmodule

@@ -30,11 +30,14 @@ module ctrl(
   
   initial
   begin
+    ALUSrc = 0;
     RegWrite = 0;
     RegDst = 0;
-    EXTOp = 0;
     MemWrite = 0;
-    ALUSrc = 0;
+    MemRead = 0;
+    Mem2Reg = 0;
+    Branch = 0;
+    Jump = 1;
   end
   
   // Reference at doc/commands
@@ -103,7 +106,7 @@ module ctrl(
         MemRead = 0;
         Mem2Reg = 0;
         Branch = 1;
-        Jump = 1;
+        Jump   = 1;
       end
       `CTRL_OP_JAL:
       begin
@@ -116,7 +119,18 @@ module ctrl(
         Branch = 0;
         Jump = 0;
       end
-      default: ;
+      
+      default:
+      begin
+        ALUSrc = 0;
+        RegWrite = 0;
+        RegDst = 0;
+        MemWrite = 0;
+        MemRead = 0;
+        Mem2Reg = 0;
+        Branch = 0;
+        Jump = 1;
+      end
     endcase
   end
 endmodule

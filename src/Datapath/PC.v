@@ -8,8 +8,12 @@ module pc(
   always @(posedge clk)
 	begin
 		if(reset)
-			dout[31:0] <= {32'h0000_3000};
+		begin
+		  $display("PC receive reset signal.");
+			dout <= {32'h0000_000c};
+		end
 		else
-			dout <= data;
+			dout <= data[31:0];
+		$display("PC data_output: %x", dout);
 	end
 endmodule

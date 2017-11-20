@@ -40,19 +40,19 @@ http://www.mrc.uidaho.edu/mrc/people/jff/digital/MIPSir.html
     - MemRead
 - Other
     - Mem2Reg
-    - branch
-    - jump
+    - Branch
+    - Jump
 
 #### R-Type signals
 
-|Instr|ALUOp|ALUSrc|RegWrite|RegDst|MemWrite|MemRead|Mem2Reg|branch|jump |
+|Instr|ALUOp|ALUSrc|RegWrite|RegDst|MemWrite|MemRead|Mem2Reg|Branch|Jump |
 | :-: | :-: | :--: | :----: | :--: | :----: | :---: | :---: | :--: | :-: |
 |addu |ADDU | 0    | 1      | 1    | 0      | 0     | 0     | 0    | 1   |
 |subu |SUBU | 0    | 1      | 1    | 0      | 0     | 0     | 0    | 1   |
 
-#### I-Type signals (without ALUOp)
+#### I-Type & J-Type signals (without ALUOp)
 
-|Instr|ALUSrc|RegWrite|RegDst|MemWrite|MemRead|Mem2Reg|branch|jump |
+|Instr|ALUSrc|RegWrite|RegDst|MemWrite|MemRead|Mem2Reg|Branch|Jump |
 | :-: | :--: | :----: | :--: | :----: | :---: | :---: | :--: | :-: |
 | ori | 1    | 1      | 0    | 0      | 0     | 0     | 0    | 1   |
 | lw  | 1    | 1      | 0    | 0      | 1     | 1     | 0    | 1   |
