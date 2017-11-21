@@ -155,13 +155,20 @@ module mips(
   
   always @(clk)
   begin
-    $display("------------------------ MIPS signals -------------------------------");
-    $display("Branch, Jump: %d, %d", Branch, Jump);
+    if (!clk)
+    begin
+      $display("------------------------ MIPS signals -------------------------------");
     
-    $display("--------- PC addrs... ----------");
-    $display("current %x, temp %x, next %x, add4 %x, br %x", 
-      pc_current, pc_temp, pc_next, pc_add4, pc_branch
-    );
+      $display("Branch, Jump: %d, %d", Branch, Jump);
+      $display("alu_result: %x, dm_read_data: %x", alu_result, dm_read_data);
+      /*
+      $display("--------- PC addrs... ----------");
+      $display("current %x, temp %x, next %x, add4 %x, br %x", 
+        pc_current, pc_temp, pc_next, pc_add4, pc_branch
+      );
+      */
+      $stop;
+    end
   end
 
 endmodule

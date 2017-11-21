@@ -15,15 +15,22 @@
   
   always@(*)
   begin
+    $display("ALU! 1: %x, 2: %x", num_1, num_2);
     // Calc 
     case (ALUOp)
       `ALUOP_ADDU: result = num_1 + num_2;
       `ALUOP_SUBU: result = num_1 - num_2;
-      `ALUOP_ORI: result = num_1 | num_2;
+      
+      `ALUOP_ORI: 
+      begin
+        result = num_1 | num_2;
+        // $display("OR! 1: %x, 2: %x", num_1, num_2);
+      end
+      
       default: result = 0;
     endcase 
     // Zero
-    if (num_1[31:0] == num_2[31:0])
+    if (num_1 == num_2)
       Zero = 1;
     else
       Zero = 0;

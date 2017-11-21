@@ -63,6 +63,7 @@ module ctrl(
       
       `CTRL_OP_ORI: 
       begin
+        ALUOp = `ALUOP_ORI;
         ALUSrc = 1;
         RegWrite = 1;
         RegDst = 0;

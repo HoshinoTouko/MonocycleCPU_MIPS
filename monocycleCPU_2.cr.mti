@@ -36,6 +36,13 @@ Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
 Top level modules:
 	alu
 
+} {} {}} C:/Projects/modeltech/monocycleCPU_2/src/mips.v {1 {vlog -work work -vopt C:/Projects/modeltech/monocycleCPU_2/src/mips.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module mips
+
+Top level modules:
+	mips
+
 } {} {}} C:/Projects/modeltech/monocycleCPU_2/src/Define/global_def.v {1 {vlog -work work -vopt C:/Projects/modeltech/monocycleCPU_2/src/Define/global_def.v
 Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
 
@@ -44,6 +51,13 @@ Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
 
 } {} {}} C:/Projects/modeltech/monocycleCPU_2/src/Define/instruction_def.v {1 {vlog -work work -vopt C:/Projects/modeltech/monocycleCPU_2/src/Define/instruction_def.v
 Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+
+} {} {}} C:/Projects/modeltech/monocycleCPU_2/src/Generatic/mux.v {1 {vlog -work work -vopt C:/Projects/modeltech/monocycleCPU_2/src/Generatic/mux.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module mux
+
+Top level modules:
+	mux
 
 } {} {}} C:/Projects/modeltech/monocycleCPU_2/src/Datapath/im.v {1 {vlog -work work -vopt C:/Projects/modeltech/monocycleCPU_2/src/Datapath/im.v
 Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
@@ -69,19 +83,19 @@ Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
 Top level modules:
 	dm
 
-} {} {}} C:/Projects/modeltech/monocycleCPU_2/src/test.v {1 {vlog -work work -vopt C:/Projects/modeltech/monocycleCPU_2/src/test.v
-Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
--- Compiling module testbench
-
-Top level modules:
-	testbench
-
 } {} {}} C:/Projects/modeltech/monocycleCPU_2/test/Generatic/mux_tb.v {1 {vlog -work work -vopt C:/Projects/modeltech/monocycleCPU_2/test/Generatic/mux_tb.v
 Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
 -- Compiling module mux_tb
 
 Top level modules:
 	mux_tb
+
+} {} {}} C:/Projects/modeltech/monocycleCPU_2/src/test.v {1 {vlog -work work -vopt C:/Projects/modeltech/monocycleCPU_2/src/test.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module testbench
+
+Top level modules:
+	testbench
 
 } {} {}} C:/Projects/modeltech/monocycleCPU_2/src/Datapath/PC.v {1 {vlog -work work -vopt C:/Projects/modeltech/monocycleCPU_2/src/Datapath/PC.v
 Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012

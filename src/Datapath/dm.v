@@ -3,20 +3,36 @@ module dm(
   input wire[31:0] write_data,
   input wire MemWrite,
   input wire MemRead,
-  input wire[11:2] addr,
+  input wire[3:0] addr,
   
-  output reg[31:0] read_data
+  output wire[31:0] read_data
 );
   
-  reg[31:0]	memory[1023:0] ;
+  reg[31:0]	memory[31:0];
+  reg[31:0] read_data_tmp;
+  
+  integer i;
+  
+  initial
+  begin
+    for (i = 0; i < 32; i = i + 1)
+      memory[i] = 0;
+  end
   
   always @(posedge clk) 
   begin
-    if (MemWrite) memory[addr[11:2]][31:0] <= write_data[31:0];
+    if (MemWrite) 
+    begin
+      $display("DM Write %x to %d", write_data, addr);
+      memory[addr] = write_data;
+    end
+    $display("------------------------------- DM info -------------------------------");
+    for (i = 0; i < 32; i = i + 1)
+    begin
+      $display("DM %d: %x", i, memory[i]);
+    end
+    $display("------------------------------- DM fin -------------------------------");
   end
-
-  always @(addr or MemRead) 
-  begin
-    if (MemRead) read_data[31:0] <= memory[addr[11:2]][31:0];
-	end
+	
+	assign read_data = memory[addr];
 endmodule

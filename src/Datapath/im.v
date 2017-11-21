@@ -11,7 +11,7 @@ module im(
 	  fd=$fopen("src/testbench.txt","r");
 	  
 	  $display("----------------------- IM start read interuction... ----------------------");
-	  for (pointer = 3; !$feof(fd); pointer = pointer + 1)
+	  for (pointer = 0; !$feof(fd); pointer = pointer + 1)
 	  begin
 	    $fscanf(fd, "%b\t", temp_instr);
       instrMem[pointer] = temp_instr;

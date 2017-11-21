@@ -10,7 +10,7 @@ module pc(
 		if(reset)
 		begin
 		  $display("PC receive reset signal.");
-			dout <= {32'h0000_000c};
+			dout <= {32'h00003000};
 		end
 		else
 			dout <= data[31:0];
