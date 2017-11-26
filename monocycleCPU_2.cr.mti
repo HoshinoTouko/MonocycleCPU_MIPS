@@ -12,6 +12,13 @@ Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
 Top level modules:
 	alu_tb
 
+} {} {}} C:/Projects/modeltech/monocycleCPU_2/src/Datapath/RF.v {1 {vlog -work work -vopt C:/Projects/modeltech/monocycleCPU_2/src/Datapath/RF.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module RF
+
+Top level modules:
+	RF
+
 } {} {}} C:/Projects/modeltech/monocycleCPU_2/src/Datapath/EXT.v {1 {vlog -work work -vopt C:/Projects/modeltech/monocycleCPU_2/src/Datapath/EXT.v
 Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
 -- Compiling module EXT
@@ -76,13 +83,6 @@ Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
 Top level modules:
 	dm
 
-} {} {}} C:/Projects/modeltech/monocycleCPU_2/src/test.v {1 {vlog -work work -vopt C:/Projects/modeltech/monocycleCPU_2/src/test.v
-Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
--- Compiling module testbench
-
-Top level modules:
-	testbench
-
 } {} {}} C:/Projects/modeltech/monocycleCPU_2/test/Generatic/mux_tb.v {1 {vlog -work work -vopt C:/Projects/modeltech/monocycleCPU_2/test/Generatic/mux_tb.v
 Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
 -- Compiling module mux_tb
@@ -90,14 +90,21 @@ Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
 Top level modules:
 	mux_tb
 
+} {} {}} C:/Projects/modeltech/monocycleCPU_2/src/test.v {1 {vlog -work work -vopt C:/Projects/modeltech/monocycleCPU_2/src/test.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module testbench
+
+Top level modules:
+	testbench
+
+} {} {}} C:/Projects/modeltech/monocycleCPU_2/src/Datapath/IR.v {1 {vlog -work work -vopt C:/Projects/modeltech/monocycleCPU_2/src/Datapath/IR.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+
 } {} {}} C:/Projects/modeltech/monocycleCPU_2/src/Datapath/PC.v {1 {vlog -work work -vopt C:/Projects/modeltech/monocycleCPU_2/src/Datapath/PC.v
 Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
 -- Compiling module pc
 
 Top level modules:
 	pc
-
-} {} {}} C:/Projects/modeltech/monocycleCPU_2/src/Datapath/IR.v {1 {vlog -work work -vopt C:/Projects/modeltech/monocycleCPU_2/src/Datapath/IR.v
-Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
 
 } {} {}}
