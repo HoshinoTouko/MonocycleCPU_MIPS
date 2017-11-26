@@ -112,13 +112,14 @@ module ctrl(
       `CTRL_OP_JAL:
       begin
         ALUSrc = 0;
-        RegWrite = 0;
+        RegWrite = 1;
         RegDst = 0;
         MemWrite = 0;
         MemRead = 0;
         Mem2Reg = 0;
         Branch = 0;
         Jump = 0;
+        $display("Jump!---------------");
       end
       
       default:

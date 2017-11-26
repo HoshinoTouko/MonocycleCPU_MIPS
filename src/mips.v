@@ -15,6 +15,7 @@ module mips(
 	wire[31:0]	rf_read_data1;
 	wire[31:0]	rf_read_data2;
 	wire[4:0]	write_addr;
+	wire[4:0]	final_write_addr;
 	wire[31:0]	ext_output;
 	// ALU
 	wire[31:0]	alu_num_1;
@@ -25,6 +26,7 @@ module mips(
 	wire[31:0]	dm_write_data;
 	wire[31:0]	dm_read_data;
 	wire[31:0] mem2reg_data;
+	wire[31:0] final_mem2reg_data;
 	
 	// Signals
   wire[1:0] ALUOp;
@@ -36,6 +38,7 @@ module mips(
   wire Mem2Reg;
   wire Branch;
   wire Jump;
+  wire isJal;
   
   // PC addr add4
   assign pc_add4 = pc_current + 4;
@@ -70,7 +73,7 @@ module mips(
   // Sign extend
   EXT ext(
     .Immediate16(instr[15:0]),
-    .EXTOp(`EXTOP_ZERO),
+    .EXTOp(`EXTOP_SIGNED),
     .Immediate32(ext_output)
   );
   // Instruction Memory
@@ -102,14 +105,33 @@ module mips(
     // Output
     .output_data(write_addr)
   );
-  // Register file 
+  // JAL resolver
+  mux jal_addr_mux(
+    // Input
+    .d0(31),
+    .d1(write_addr),
+    // Signal
+    .signal(Jump),
+    // Output
+    .output_data(final_write_addr)
+  );
+  mux jal_data_mux(
+    // Input
+    .d0(pc_add4),
+    .d1(mem2reg_data),
+    // Signal
+    .signal(Jump),
+    // Output
+    .output_data(final_mem2reg_data)
+  );
+  // Register file
   RF rf(
     // Input
     .clk(clk),
     .RA1(instr[25:21]),
     .RA2(instr[20:16]),
-    .WA1(write_addr),
-    .WD(mem2reg_data),
+    .WA1(final_write_addr),
+    .WD(final_mem2reg_data),
     // Output
     .RD1(rf_read_data1),
     .RD2(rf_read_data2),
@@ -157,10 +179,11 @@ module mips(
   begin
     if (!clk)
     begin
-      $display("------------------------ MIPS signals -------------------------------");
+      //$display("------------------------ MIPS signals -------------------------------");
     
-      $display("Branch, Jump: %d, %d", Branch, Jump);
-      $display("alu_result: %x, dm_read_data: %x", alu_result, dm_read_data);
+      //$display("Branch, Jump: %d, %d", Branch, Jump);
+      //$display("alu_result: %x, dm_read_data: %x", alu_result, dm_read_data);
+      // $display("Jump addr: %x", {pc_add4[31:28], instr[25:0], 2'b00});
       /*
       $display("--------- PC addrs... ----------");
       $display("current %x, temp %x, next %x, add4 %x, br %x", 

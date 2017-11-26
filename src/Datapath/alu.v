@@ -15,7 +15,7 @@
   
   always@(*)
   begin
-    $display("ALU! 1: %x, 2: %x", num_1, num_2);
+    // $display("ALU! 1: %x, 2: %x", num_1, num_2);
     // Calc 
     case (ALUOp)
       `ALUOP_ADDU: result = num_1 + num_2;

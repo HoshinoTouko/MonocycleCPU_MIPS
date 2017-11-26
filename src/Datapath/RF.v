@@ -13,10 +13,12 @@ module RF(
 	output [31:0]RD2  // Read data 2
 );
 	reg[31:0] register[31:0];
-	integer i;
+	integer i, fd, cycles;
   	 
 	initial 
 	begin
+	  fd = $fopen("RF_Results.txt","w");
+	  cycles = 0;
 	  for(i = 0; i < 32; i = i + 1)
       register[i] = 0;
   end
@@ -29,8 +31,14 @@ module RF(
       $display("RF Write: %x to %d", WD[31:0], WA1);
     end
     $display("----------------------------------- RF info -----------------------------------");
+    $fwrite(fd, "---------------------------------, Cycle %d ------------------------------\n", cycles); 
+    cycles = cycles + 1;
     for(i = 0; i < 32; i = i + 1)
-      $display("RF %d: %x", i, register[i]);
+      if (register[i] != 0)
+      begin
+        $display("RF %d: %x", i, register[i]);
+        $fwrite(fd, "RF %d: %x\n", i, register[i]); 
+      end
     $display("----------------------------------- RF fin -----------------------------------");
   end
 

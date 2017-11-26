@@ -14,6 +14,6 @@ module pc(
 		end
 		else
 			dout <= data[31:0];
-		$display("PC data_output: %x", dout);
+		//$display("PC data_output: %x", dout);
 	end
 endmodule
