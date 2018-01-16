@@ -30,7 +30,6 @@ http://www.mrc.uidaho.edu/mrc/people/jff/digital/MIPSir.html
 ### Signals
 
 - ALU
-    - ALUOp
     - ALUSrc
 - Register File
     - RegWrite
