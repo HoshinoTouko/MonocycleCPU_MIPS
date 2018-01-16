@@ -19,7 +19,7 @@ module alu_tb();
   wire[31:0] result;
   
   integer fd;
-    		
+
   initial
   begin
     clk = 1;

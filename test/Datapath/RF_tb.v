@@ -10,20 +10,20 @@ module RF_tb();
   reg clk;
   reg RFWr; // Write data signal
 
-	reg [4:0]WA1; // Address of 1st. reg to write
-  		
-	reg [4:0]RA1; // Address of 1st. reg to read
-	reg [4:0]RA2; // Address of 2nd. reg to read
-  		
-	reg [31:0]WD; // Write data
-  		
-	wire [31:0]RD1; // Read data 1
-	wire [31:0]RD2;  // Read data 2
-	reg [31:0]RD1_tmp;
-	reg [31:0]RD2_tmp;
-	
-	reg [31:0]RD1_output; // Read data 1 output
-	reg [31:0]RD2_output;  // Read data 2 output
+    reg [4:0]WA1; // Address of 1st. reg to write
+
+    reg [4:0]RA1; // Address of 1st. reg to read
+    reg [4:0]RA2; // Address of 2nd. reg to read
+
+    reg [31:0]WD; // Write data
+
+    wire [31:0]RD1; // Read data 1
+    wire [31:0]RD2;  // Read data 2
+    reg [31:0]RD1_tmp;
+    reg [31:0]RD2_tmp;
+
+    reg [31:0]RD1_output; // Read data 1 output
+    reg [31:0]RD2_output;  // Read data 2 output
   
   integer fd, line_count;
   

@@ -680,16 +680,16 @@ IterationLimit = 5000
 ; noqueue       Do not wait in the license queue when a license is not available
 ; viewsim       Try for viewer license but accept simulator license(s) instead
 ;               of queuing for viewer license (PE ONLY)
-; noviewer	Disable checkout of msimviewer and vsim-viewer license 
-;		features (PE ONLY)
-; noslvhdl	Disable checkout of qhsimvh and vsim license features
-; noslvlog	Disable checkout of qhsimvl and vsimvlog license features
-; nomix		Disable checkout of msimhdlmix and hdlmix license features
-; nolnl		Disable checkout of msimhdlsim and hdlsim license features
-; mixedonly	Disable checkout of qhsimvh,qhsimvl,vsim,vsimvlog license 
-;		features
-; lnlonly	Disable checkout of qhsimvh,qhsimvl,vsim,vsimvlog,msimhdlmix,
-;		hdlmix license features
+; noviewer    Disable checkout of msimviewer and vsim-viewer license
+;        features (PE ONLY)
+; noslvhdl    Disable checkout of qhsimvh and vsim license features
+; noslvlog    Disable checkout of qhsimvl and vsimvlog license features
+; nomix        Disable checkout of msimhdlmix and hdlmix license features
+; nolnl        Disable checkout of msimhdlsim and hdlsim license features
+; mixedonly    Disable checkout of qhsimvh,qhsimvl,vsim,vsimvlog license
+;        features
+; lnlonly    Disable checkout of qhsimvh,qhsimvl,vsim,vsimvlog,msimhdlmix,
+;        hdlmix license features
 ; Single value:
 ; License = plus
 ; Multi-value:
